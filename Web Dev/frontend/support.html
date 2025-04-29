@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Support - 3ClickBuilder</title>
+    <link rel="stylesheet" href="support.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">3ClickBuilder</div>
+            <div class="nav-links">
+                <a href="landing.html">Home</a>
+                <a href="index.html">Builder</a>
+                <a href="support.html" class="active">Support</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="support-hero">
+            <h1>How Can We Help You?</h1>
+            <p>Our AI assistant is available 24/7 to answer your questions</p>
+        </section>
+
+        <section class="support-container">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <div class="ai-status">
+                        <span class="status-dot"></span>
+                        AI Assistant Online
+                    </div>
+                </div>
+                <div class="chat-messages" id="chatMessages">
+                    <div class="message ai-message">
+                        <div class="message-content">
+                            <p>Hello! I'm your AI assistant. How can I help you today?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="chat-input">
+                    <input type="text" id="userInput" placeholder="Type your message here...">
+                    <button id="sendButton">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+
+            <div class="support-sidebar">
+                <div class="quick-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#faq">Frequently Asked Questions</a></li>
+                        <li><a href="#tutorials">Video Tutorials</a></li>
+                        <li><a href="#contact">Contact Human Support</a></li>
+                    </ul>
+                </div>
+                <div class="common-questions">
+                    <h3>Common Questions</h3>
+                    <div class="question-card" onclick="askQuestion('How do I create a website?')">
+                        <i class="fas fa-question-circle"></i>
+                        <span>How do I create a website?</span>
+                    </div>
+                    <div class="question-card" onclick="askQuestion('What are your pricing plans?')">
+                        <i class="fas fa-question-circle"></i>
+                        <span>What are your pricing plans?</span>
+                    </div>
+                    <div class="question-card" onclick="askQuestion('How do I customize my website?')">
+                        <i class="fas fa-question-circle"></i>
+                        <span>How do I customize my website?</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>3ClickBuilder</h3>
+                <p>Create professional websites in minutes.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <a href="landing.html">Home</a>
+                <a href="index.html">Builder</a>
+                <a href="support.html">Support</a>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: support@3clickbuilder.com</p>
+                <p>Phone: (555) 123-4567</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 3ClickBuilder. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="support.js"></script>
+</body>
+</html> 

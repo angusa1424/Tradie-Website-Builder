@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3ClickBuilder - Create Your Website in 3 Clicks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://maps.googleapis.com/maps/api/js?key=YOUR_GOOGLE_MAPS_API_KEY&libraries=places"></script>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>3ClickBuilder</h1>
+            <p>Create your professional website in just 3 clicks</p>
+        </header>
+
+        <main>
+            <div class="form-container">
+                <form id="websiteForm">
+                    <div class="form-group">
+                        <label for="businessName">Business Name</label>
+                        <input type="text" id="businessName" name="businessName" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="serviceType">Service Type</label>
+                        <input type="text" id="serviceType" name="serviceType" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="location">Location</label>
+                        <input type="text" id="location" name="location" required>
+                    </div>
+
+                    <button type="submit" class="create-button">Create Website</button>
+                </form>
+            </div>
+
+            <div id="preview" class="preview-container" style="display: none;">
+                <h2>Website Preview</h2>
+                <div id="previewContent"></div>
+                <button id="downloadPdf" class="download-button">Download PDF Summary</button>
+                <button id="publishWebsite" class="publish-button">Publish Website</button>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html> 
